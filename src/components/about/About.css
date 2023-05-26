@@ -1,0 +1,203 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet {
+  --swiper-theme-color: white;
+  background: transparent;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 30px) 7px;
+}
+.swiper-pagination {
+  width: 8%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.swiper-pagination span {
+  width: 100%;
+  font-size: 20px;
+}
+.swiper-pagination span:nth-child(1)::before {
+  content: "О нас";
+}
+.swiper-pagination span:nth-child(2)::before {
+  content: "Философия бренда";
+}
+.swiper-pagination span:nth-child(3)::before {
+  content: "Направление: инжинерия";
+}
+.swiper-pagination span:nth-child(4)::before {
+  content: "Направление: логистика";
+}
+.swiper-pagination span:nth-child(5)::before {
+  content: "Направление: Строительство";
+}
+.swiper-pagination span:nth-child(6)::before {
+  content: "Направление: Металлопроизводство";
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  right: 89%;
+}
+
+/* NAVBAR */
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*!------------------------------------------------------------------------------------------------ navbar start */
+header {
+  height: 80px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 999;
+}
+#header-logo {
+  width: 170px;
+  font-size: 50px;
+  text-align: right;
+}
+
+.header-content {
+  display: flex;
+  height: 100%;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 18px;
+  /* margin-right: 5%; */
+  margin-right: 40px;
+  white-space: nowrap;
+  padding: 0;
+}
+.header-list-item {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s ease-in-out 0s;
+  transform: translateZ(0px);
+}
+
+.header-list-item svg {
+  margin-left: 7px;
+}
+
+.header-list-item:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(157, 211, 84);
+}
+
+.header-btns {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+}
+.header-btns button {
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  width: 80px;
+  cursor: pointer;
+}
+
+.header-btns .search {
+  background-color: #e2e0da;
+}
+.header-btns svg {
+  fill: white;
+  width: 35%;
+  transition: fill 0.2s ease-in-out 0s;
+}
+
+.header-btns .search svg {
+  fill: #3f3f42;
+}
+
+.header-btns svg:hover {
+  fill: rgb(157, 211, 84);
+}
+
+.header-btns .languages {
+  background-color: #a4a4a6;
+}
+
+.header-btns .menu {
+  background-color: #3f3f42;
+}
+
+.header-btns .menu svg {
+  width: 50%;
+}
+.menu-close {
+  display: none;
+  margin: auto;
+}
+.menu-display-none {
+  display: none;
+}
+.menu-display-block {
+  display: flex;
+}
+/* NAVBAR */
+#about_video {
+  width: 100%;
+}
+
+#about_video::before {
+  content: "Scroll Down";
+  position: absolute;
+  left: 45%;
+  color: black;
+}

@@ -1,0 +1,140 @@
+.path-section {
+  padding: 90px 0 2% 8%;
+  width: 100%;
+}
+.path-section a {
+  font-size: 14px;
+  margin: 0.2%;
+}
+.path-section a:last-of-type {
+  font-weight: 700;
+}
+.path-section a:hover {
+  color: grey;
+}
+/* path section end */
+
+/* page intro section start */
+.page-intro-section {
+  height: 70vh;
+  /* background-color: antiquewhite; */
+  margin-bottom: 10%;
+  /* box-sizing: content-box; */
+}
+.page-intro-section-img-block {
+  background: url("https://www.swecogroup.com/wp-content/uploads/sites/2/2021/03/Water-Energy-Industry-hero_ver-2-GW-1680x800.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.page-intro-section-img-block h1 {
+  font-size: 45px;
+  color: white;
+  margin-top: 0;
+  padding: 10%;
+  width: 60%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.page-intro-section-text {
+  position: absolute;
+  font-size: 28px;
+  padding: 50px;
+  background-color: white;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  transform: translateY(23%);
+  /* z-index: 5; */
+}
+.page-intro-section-text p {
+  margin: 0;
+  line-height: 30px;
+}
+
+/* page intro section end */
+/* filler section start */
+.filler-section-box {
+  padding-left: 14%;
+  padding-bottom: 5%;
+  display: flex;
+}
+.filler-section-img-box,
+.filler-section-content-box {
+  width: 50%;
+}
+.filler-section-content-box {
+  padding: 0 35px;
+}
+.filler-section-img-box img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.filler-section-content-box h3 {
+  font-size: 30px;
+  margin: 0 0 1% 0;
+  font-weight: bold;
+}
+.filler-section-content-box p {
+  line-height: 25px;
+}
+.filler-section-content-box li::before {
+  /* content: url("./icons/check-icon.svg"); */
+  display: inline-block;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+.filler-section-content-box li {
+  display: flex;
+  align-items: center;
+}
+
+/* filler section end */
+@media screen and (max-width: 1000px) {
+  .filler-section-box {
+    padding-left: 0;
+  }
+  .filler-section-img-box {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  .page-intro-section-text {
+    transform: translateY(45%);
+    width: 80%;
+  }
+  .page-intro-section {
+    margin-bottom: 20%;
+  }
+  .filler-section-box {
+    flex-direction: column;
+  }
+  .filler-section-box:nth-of-type(2n) {
+    flex-direction: column-reverse;
+  }
+  .filler-section-content-box,
+  .filler-section-img-box {
+    width: 100%;
+  }
+  .filler-section-content-box {
+    padding-top: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-intro-section-img-block {
+    height: 60%;
+  }
+  .page-intro-section-img-block h1 {
+    width: 100%;
+    margin: 0;
+  }
+  .page-intro-section-text {
+    width: 90%;
+    transform: translateY(70%);
+    padding: 30px;
+    margin-bottom: 1%;
+  }
+}

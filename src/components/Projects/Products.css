@@ -1,0 +1,41 @@
+.products_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.search_button {
+  background-color: #9dd354;
+  border: none;
+  width: 7%;
+  font-size: 23px;
+}
+.search_icon {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  align-items: center;
+  background-color: rgb(177, 177, 177);
+  width: 17%;
+  height: 50px;
+  margin-right: 1%;
+}
+
+.search_icon input {
+  background-color: transparent;
+  border: none;
+}
+
+.search_icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.search_wrapper {
+  display: flex;
+  width: 120%;
+  margin-left: 2%;
+}
+.card {
+  width: 45%;
+  margin: 2%;
+}
