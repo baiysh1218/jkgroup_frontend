@@ -5,6 +5,7 @@ import HomePage from "../components/homePage.jsx/HomePage";
 import PageNotFound from "../components/PageNotFound/PageNotFound";
 import ProductsList from "../components/Projects/ProductsList";
 import SecondPage from "../components/secondPage/SecondPage";
+import Team from "../components/team/Team";
 
 const MainRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const MainRoutes = () => {
       <Route path="/secondPage" element={<SecondPage />} />
       <Route path="/about" element={<About />} />
       <Route path="/products" element={<ProductsList />} />
+      <Route path="/team" element={<Team />} />
       <Route path="/*" element={<PageNotFound />} />
     </Routes>
   );

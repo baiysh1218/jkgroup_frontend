@@ -2,22 +2,36 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 
+import constactions from "../assets/logo/JKConstactions.png";
+
+import mainVideo from "../assets/video/Night.mp4";
+import About from "../about/About";
+import Team from "../team/Team";
+
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <main>
+    <main className="main_home_page">
       <section className="section-one-box">
         <video autoplay muted loop id="homepage-video">
-          <source src="../video/Night City_ Video Edit.mp4" type="video/mp4" />
+          {/* <source src={mainVideo} type="video/mp4" /> */}
         </video>
         <div className="content-box">
           <div className="mainsection-content-box">
             <div className="mainsection-content">
               <div className="mainsection-content-text">
-                <h1>Transforming society together</h1>
-                <p>Making a difference in everything we do</p>
+                {/* <h1>
+                  Вместе к новым горизонтам: объединяем устойчивость,
+                  стабильность и инновационность с приоритетом на человеческие
+                  ресурсы.
+                </h1> */}
+                <p>
+                  Вместе к новым горизонтам: объединяем устойчивость,
+                  стабильность и инновационность с приоритетом на человеческие
+                  ресурсы
+                </p>
               </div>
-              <form className="mainsection-content-form" action="submit">
+              {/* <form className="mainsection-content-form" action="submit">
                 <input
                   className="mainsection-content-search"
                   placeholder="What are you looking for?"
@@ -32,14 +46,30 @@ const HomePage = () => {
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                   </svg>
                 </button>
-              </form>
+              </form> */}
             </div>
           </div>
           <div className="mainsection-options">
             <a
               className="mainsection-options-item"
               onClick={() => navigate("/secondPage")}>
-              Building and urban areas
+              JK Logistics
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                className="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+              {/* <img src={constactions} alt="" /> */}
+            </a>
+            <a className="mainsection-options-item">
+              JK Engenering
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -54,7 +84,7 @@ const HomePage = () => {
               </svg>
             </a>
             <a className="mainsection-options-item">
-              Water, Energy and Industry
+              JK Constraction
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -69,22 +99,7 @@ const HomePage = () => {
               </svg>
             </a>
             <a className="mainsection-options-item">
-              Transportation Infrastracture
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16">
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-            <a className="mainsection-options-item">
-              Architechture
+              JK MetalProf
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -101,7 +116,15 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="second-section-box">
+      <div className="sub_head_wrapper">
+        <h2 className="sub_head">О компании</h2>
+      </div>
+      <About />
+      <div className="sub_head_wrapper">
+        <h2 className="sub_head">О команде</h2>
+      </div>
+      <Team />
+      {/* <section className="second-section-box">
         <div className="second-section-left-box">
           <h2>
             Sweco is Europe’s leading architecture and engineering consultancy
@@ -528,7 +551,7 @@ const HomePage = () => {
           </div>
           <button className="green-btn-text">Submit</button>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

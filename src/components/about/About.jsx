@@ -15,11 +15,11 @@ import { Mousewheel, Pagination } from "swiper";
 const About = () => {
   return (
     <>
-      <section>
+      {/* <section>
         <video autoplay muted loop id="about_video">
           <source src="../video/Night City_ Video Edit.mp4" type="video/mp4" />
         </video>
-      </section>
+      </section> */}
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
@@ -30,12 +30,12 @@ const About = () => {
         }}
         modules={[Mousewheel, Pagination]}
         className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide className="swiper_slide">Slide 1</SwiperSlide>
+        <SwiperSlide className="swiper_slide">Slide 2</SwiperSlide>
+        <SwiperSlide className="swiper_slide">Slide 3</SwiperSlide>
+        <SwiperSlide className="swiper_slide">Slide 4</SwiperSlide>
+        <SwiperSlide className="swiper_slide">Slide 5</SwiperSlide>
+        <SwiperSlide className="swiper_slide">Slide 6</SwiperSlide>
       </Swiper>
     </>
   );

@@ -8,7 +8,7 @@ body {
 }
 * {
   box-sizing: border-box;
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 a {
   text-decoration: none;
@@ -23,7 +23,6 @@ ul {
 /*!------------------------------------------------------------------------------------------------ navbar start */
 header {
   height: 80px;
-  background-color: #fff;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -33,12 +32,22 @@ header {
   justify-content: space-between;
   box-sizing: border-box;
   z-index: 999;
+  background-color: #f1f2f2;
+  color: #231f20;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-style: 24px;
 }
 #header-logo {
-  width: 170px;
+  width: 13%;
   font-size: 50px;
   text-align: right;
   cursor: pointer;
+  margin-top: 1%;
+}
+
+#header-logo img {
+  width: 70%;
 }
 
 .header-content {
@@ -71,28 +80,32 @@ header {
 
 .header-list-item:hover {
   cursor: pointer;
-  border-bottom: 2px solid rgb(157, 211, 84);
+  border-bottom: 2px solid #231f20;
 }
 
 .header-btns {
   display: flex;
   height: 100%;
   width: fit-content;
+  margin-right: 2%;
 }
 .header-btns button {
   height: 100%;
   border-radius: 0;
   border: none;
-  width: 80px;
+  width: 60px;
   cursor: pointer;
 }
 
 .header-btns .search {
-  background-color: #e2e0da;
+  background-color: #f1f2f2;
+}
+.header-btns .search img {
+  width: 49%;
 }
 .header-btns svg {
-  fill: white;
-  width: 35%;
+  fill: #231f20;
+  width: 50%;
   transition: fill 0.2s ease-in-out 0s;
 }
 
@@ -100,16 +113,16 @@ header {
   fill: #3f3f42;
 }
 
-.header-btns svg:hover {
+/* .header-btns svg:hover {
   fill: rgb(157, 211, 84);
-}
+} */
 
 .header-btns .languages {
-  background-color: #a4a4a6;
+  background-color: #f1f2f2;
 }
 
 .header-btns .menu {
-  background-color: #3f3f42;
+  background-color: #f1f2f2;
 }
 
 .header-btns .menu svg {
@@ -173,7 +186,7 @@ header {
   align-items: center;
   color: white;
   font-size: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.34);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.34); */
   transition: 0.2s;
 }
 .modal-window-list-item {
@@ -208,3 +221,31 @@ header {
   transform: rotate(180deg);
 } */
 /* !modal window end */
+
+.menu {
+  display: none;
+}
+
+.nav_logo_mobile {
+  display: none;
+}
+
+@media all and (max-width: 895px) {
+  #header-logo img {
+    width: 0;
+  }
+  .menu {
+    display: block;
+    background-color: #f1f2f2;
+  }
+  .header-content {
+    display: none;
+  }
+  .nav_logo_web {
+    display: none;
+  }
+  .nav_logo_mobile {
+    display: block;
+    width: 85px !important;
+  }
+}

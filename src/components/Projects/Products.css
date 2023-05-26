@@ -4,18 +4,19 @@
   width: 100%;
 }
 .search_button {
-  background-color: #9dd354;
+  background-color: #231f20;
+  color: #f1f2f2;
   border: none;
   width: 7%;
   font-size: 23px;
 }
 .search_icon {
   display: flex;
-  justify-content: space-between;
-  padding-right: 10px;
+  justify-content: space-evenly;
+  padding-right: 20px;
   align-items: center;
-  background-color: rgb(177, 177, 177);
-  width: 17%;
+  background-color: #e1deda;
+  width: 25%;
   height: 50px;
   margin-right: 1%;
 }
@@ -23,6 +24,15 @@
 .search_icon input {
   background-color: transparent;
   border: none;
+  outline: none;
+  margin-left: 10%;
+  font-size: 23px;
+  width: 100%;
+}
+
+.search_icon input:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .search_icon img {
@@ -37,5 +47,16 @@
 }
 .card {
   width: 45%;
-  margin: 2%;
+  margin: 5% 2%;
+  position: relative;
+}
+
+.card_img_wrapper {
+  position: absolute;
+  z-index: 99;
+  top: -11%;
+}
+
+.card_img_wrapper img {
+  width: 33%;
 }
