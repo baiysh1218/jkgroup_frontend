@@ -42,13 +42,13 @@
 
 .search_wrapper {
   display: flex;
-  width: 120%;
+  /* width: 120%; */
+  margin: 5%;
   margin-left: 2%;
 }
 .card {
   width: 45%;
   margin: 5% 2%;
-  position: relative;
 }
 
 .card_img_wrapper {

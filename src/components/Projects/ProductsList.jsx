@@ -174,8 +174,7 @@ const ProductsList = () => {
         </div>
         {/* ! PRODUCTS */}
       </div>
-
-      <div className="pagination_list_wrapper"></div>
+      {/* <div className="pagination_list_wrapper"></div> */}
     </div>
   );
 };
