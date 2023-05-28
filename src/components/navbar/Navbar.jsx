@@ -93,7 +93,7 @@ const Navbar = () => {
               fill="currentColor"
               viewBox="0 0 16 16">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
               />
             </svg>
@@ -109,11 +109,11 @@ const Navbar = () => {
           </button>
         </div>
       </header>
-      <div class="modal-window-box">
-        <div class="modal-window-content-box modal-window-content-box-dissapear">
+      <div className="modal-window-box">
+        <div className="modal-window-content-box modal-window-content-box-dissapear">
           <ul>
-            <li class="modal-window-list-item">
-              <div class="modal-window-list-item-box">
+            <li className="modal-window-list-item">
+              <div className="modal-window-list-item-box">
                 <div>
                   <h3 onClick={() => navigate("/about")}>О компании</h3>
                   <h3 onClick={() => navigate("/products")}>Проекты</h3>
@@ -124,13 +124,13 @@ const Navbar = () => {
                   <h3 onClick={() => navigate("/")}>Домой</h3>
                 </div>
 
-                {/* <button class="green-btn-arrow">
+                {/* <button className="green-btn-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
                     height="23"
                     fill="currentColor"
-                    class="bi bi-chevron-up"
+                    className="bi bi-chevron-up"
                     viewBox="0 0 16 16">
                     <path
                       fill-rule="evenodd"

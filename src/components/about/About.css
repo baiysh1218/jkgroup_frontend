@@ -86,6 +86,7 @@ body {
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   right: 77%;
+  height: 430px;
 }
 
 /* NAVBAR */

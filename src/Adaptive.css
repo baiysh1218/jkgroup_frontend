@@ -318,3 +318,9 @@
     height: 350px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main_home_page {
+    margin-top: 30%;
+  }
+}
